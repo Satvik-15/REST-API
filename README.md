@@ -1,22 +1,3 @@
-This is the README.md file for the Secrets API server.
-
-## Getting Started
-
-To get started, clone the repository and install the dependencies.
-
-```
-git clone https://github.com/appbrewery/secrets-api-server.git
-cd secrets-api-server
-npm install
-```
-
-Once the dependencies are installed, you can start the server by running the following command.
-
-```
-npm start
-```
-
-The server will start running on port 3000. You can access the API at [http://localhost:3000/](http://localhost:3000/).
 
 ## API Reference
 
