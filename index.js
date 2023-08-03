@@ -25,11 +25,10 @@ app.get("/", (req, res) => {
 
 app.post("/get-secret", async (req, res) => {
   const searchId = req.body.id;
-  const hhe = req.body;
   try {
     const result = await axios.get(API_URL + "/secrets/" + searchId, config);
     res.render("index.ejs", { content: JSON.stringify(result.data) });
-    console.log("Data is: ", hhe);
+    console.log(req.body);
   } catch (error) {
     res.render("index.ejs", { content: JSON.stringify(error.response.data) });
   }
